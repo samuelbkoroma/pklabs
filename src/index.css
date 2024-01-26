@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Conthrax";
+  src: url("assets/Conthrax.otf") format("truetype");
+  /* Add additional font styles (e.g., font-weight, font-style) if needed */
+}
+
+@font-face {
+  font-family: "Seravek";
+  src: url(".assets/seravek.ttf") format("truetype");
+  /* Add additional font styles (e.g., font-weight, font-style) if needed */
+}
+
+body {
+  font-family: "Conthrax", sans-serif; /* Use the font in your CSS */
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
