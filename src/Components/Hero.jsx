@@ -4,10 +4,10 @@ import styled from "styled-components";
 const Hero = () => {
   return (
     <Div>
-      <span className="span">
+      {/* <span className="span">
         "Embrace the peculiar,for within its folds lie the seeds of innovation.
         At Pecular Labs, we transcend the ordinary to extraordinary solutions."
-      </span>
+      </span> */}
     </Div>
   );
 };
@@ -15,7 +15,7 @@ const Hero = () => {
 export default Hero;
 
 const Div = styled.div`
-  background-image: url("assets/pecular3.jpg");
+  background-image: url("assets/pecular1.jpg");
   width: 100%;
   height: 800px;
   background-position: center;

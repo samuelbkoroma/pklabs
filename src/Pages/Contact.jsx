@@ -98,8 +98,9 @@ const Div = styled.div`
 
   .contact-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 50px;
+    gap: 50px;
   }
 
   .contact-info-text h1 {

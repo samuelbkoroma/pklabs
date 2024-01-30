@@ -37,7 +37,7 @@ const Projects = () => {
         </div>
 
         <div className="project-1">
-          <img src="assets/techbiz.png" alt="" />
+          <img src="assets/dele.png" alt="" />
           <div className="project-text">
             <h1>Dele School</h1>
 
@@ -67,7 +67,7 @@ const Projects = () => {
         </div>
 
         <div className="project-1">
-          <img src="assets/techbiz.png" alt="" />
+          <img src="assets/wire.jpg" alt="" />
           <div className="project-text">
             <h1> AIIAC </h1>
 
@@ -159,7 +159,7 @@ const Div = styled.div`
   }
 
   .project-1 img {
-    object-fit: fill;
+    object-fit: cover;
     max-width: 600px;
     height: 500px;
 

@@ -22,13 +22,14 @@ const Navbar = () => {
     <Div>
       <nav className={color ? "header header-bg" : "header"}>
         <div className="logo-name">
-          <img src="assets/logoblue.png" alt="" height={90} />
+          <Link to="/">
+            <img src="assets/logoblue.png" alt="" height={90} />
+          </Link>
         </div>
 
         <div className="logo-link">
           <ul>
             <Link to="/" className="link">
-              {" "}
               <li>Home</li>
             </Link>
             <Link to="/about" className="link">

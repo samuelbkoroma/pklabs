@@ -57,8 +57,8 @@ const Footer = () => {
         <Link className="linked" to="/about">
           About
         </Link>
-        <Link className="linked" to="/service">
-          Service
+        <Link className="linked" to="/products">
+          Projects
         </Link>
         <Link className="linked" to="/contact">
           Contact

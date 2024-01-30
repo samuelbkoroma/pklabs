@@ -131,7 +131,7 @@ const Div = styled.div`
 
   .main p {
     color: black;
-    text-align: center;
+    text-align: left;
     font-family: poppins;
     font-size: 19px;
     font-style: normal;
