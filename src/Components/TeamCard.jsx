@@ -1,0 +1,79 @@
+import styled from "styled-components";
+
+const TeamCard = () => {
+  return (
+    <Div>
+      <div className="team">
+        <img src="assets/mann.png" alt="" className="main-img" />
+
+        <span>Omoyemi Jones</span>
+        <p>Backend Developer</p>
+
+        <div className="social">
+          <div>
+            {" "}
+            <img src="assets/linkedin.png" alt="" />{" "}
+          </div>
+          <div>
+            {" "}
+            <img src="assets/instagram.png" alt="" />{" "}
+          </div>
+          <div>
+            <img src="assets/facebooks.png" alt="" width={15} height={15} />{" "}
+          </div>
+          <div>
+            {" "}
+            <img src="assets/twitter.png" alt="" />{" "}
+          </div>
+        </div>
+      </div>
+    </Div>
+  );
+};
+
+export default TeamCard;
+
+const Div = styled.div`
+  .team {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    align-items: center;
+  }
+
+  .main-img {
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+  }
+
+  .social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .social div {
+    display: flex;
+    width: 29.995px;
+    height: 29.995px;
+    transform: rotate(45deg);
+    padding: 5.664px 5.664px 5.805px 5.805px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    transition: 0.5s ease-in-out;
+  }
+
+  .social div img {
+    transform: rotate(315deg);
+    width: 20px;
+    height: 20px;
+  }
+
+  .social div:hover {
+    background: #192bc2;
+  }
+`;

@@ -40,6 +40,13 @@ const Div = styled.div`
   }
 
   @media (max-width: 768px) {
+    background-image: url("assets/pecular1.jpg");
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     .span {
       color: white;
     }

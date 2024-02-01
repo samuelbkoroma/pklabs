@@ -82,10 +82,10 @@ const Hello = () => {
           </div>
         </div>
 
-        <div className="img">
+        {/* <div className="img">
           {" "}
           <img src="assets/logogray.png" alt="" />{" "}
-        </div>
+        </div> */}
 
         <div className="main-container">
           <div className="set">
@@ -192,8 +192,8 @@ const Div = styled.div`
 
   .main {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-evenly;
+    gap: 100px;
     align-items: center;
   }
   .set {
@@ -249,24 +249,24 @@ const Div = styled.div`
     gap: 100px;
   }
 
-  .img {
-    background: #192bc2;
-    box-shadow: 10px 10px 0px 0px #ddd;
-    width: 150px;
-    height: 150px;
-    transform: rotate(45deg);
-    padding: 24.848px 24.84px 24.84px 24.848px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  // .img {
+  //   background: #192bc2;
+  //   box-shadow: 10px 10px 0px 0px #ddd;
+  //   width: 150px;
+  //   height: 150px;
+  //   transform: rotate(45deg);
+  //   padding: 24.848px 24.84px 24.84px 24.848px;
+  //   margin: 0 auto;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
 
-  .img img {
-    width: 148px;
-    height: 107px;
-    transform: rotate(315deg);
-  }
+  // .img img {
+  //   width: 148px;
+  //   height: 107px;
+  //   transform: rotate(315deg);
+  // }
 
   .icon {
     transform: rotate(320deg);

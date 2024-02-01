@@ -3,10 +3,17 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faX } from "@fortawesome/free-solid-svg-icons";
+import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   //change nav color when scrolling
   const [color, setColor] = useState();
+  const [showSidebar, setShowSidebar] = useState(false);
+
+  const handleSidebar = () => {
+    setShowSidebar(!showSidebar);
+  };
 
   const changeColor = () => {
     if (window.scrollY >= 90) {
@@ -43,10 +50,43 @@ const Navbar = () => {
             <Link className="link" to="/contact">
               <li>Contact</li>
             </Link>
+
+            <Link className="link" to="/team">
+              <li>Team</li>
+            </Link>
           </ul>
         </div>
         <div className="menu">
-          <FontAwesomeIcon icon={faBars} />
+          <button
+            onClick={handleSidebar}
+            style={{
+              outline: "none",
+              border: "none",
+              width: 50,
+              height: 50,
+              borderRadius: 10,
+            }}
+          >
+            {showSidebar ? (
+              <FontAwesomeIcon
+                icon={faX}
+                style={{
+                  width: 20,
+                  height: 20,
+                }}
+              />
+            ) : (
+              <FontAwesomeIcon
+                icon={faBars}
+                style={{
+                  width: 20,
+                  height: 20,
+                }}
+              />
+            )}
+          </button>
+
+          {showSidebar && <Sidebar />}
         </div>
       </nav>
     </Div>

@@ -26,7 +26,7 @@ const WhatWeDo = () => {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <img src="assets/pecular2.jpg" alt="" />
+        {/* <img src="assets/pecular2.jpg" alt="" /> */}
 
         <p>
           We are an engineering and technology consultancy firm based in Sierra
@@ -86,7 +86,7 @@ const Div = styled.div`
   .wedo {
     display: flex;
     margin: 50px;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .wedo img {
@@ -100,11 +100,12 @@ const Div = styled.div`
   .wedo p {
     color: #666;
     font-family: poppins;
-    font-size: 21px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
-    max-width: 600px;
+    max-width: 1000px;
+    text-align: center;
   }
 
   @media (max-width: 768px) {

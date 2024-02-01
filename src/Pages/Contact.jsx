@@ -23,20 +23,20 @@ const Contact = () => {
 
           <h2>Call Us</h2>
           <p>
-            +232 74747474 <br />
-            +232 65656565
+            +232 77 92 04 54 <br />
+            +232 78 16 44 55
           </p>
 
           <h2>Email Us</h2>
           <p>
-            info@example.com <br />
-            sam@gmail.com
+            peculiarlabs19@gmail.com <br />
+            peculiarlabs19@gmail.com
           </p>
 
           <h2>Our Address</h2>
           <p>
-            37 maiden Beach <br />
-            malam Lumley
+            Freetown <br />
+            Sierra Leone
           </p>
         </div>
 

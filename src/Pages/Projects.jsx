@@ -2,6 +2,8 @@
 import styled from "styled-components";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -17,29 +19,43 @@ const Projects = () => {
         <h1 className="project-heading">Some Of Our Outstanding Project</h1>
 
         <div className="project-1">
-          <div className="project-text">
-            <h1>Lan 4 Vote</h1>
+          {/* <div className="project-text">
+     
 
             <p>
-              Under the project name "LAN 4 VOT," a Sierra Leonean parliament
-              aspirant sought Peculiar Labs' expertise to create a pro-bono
-              digital tool. This tool aimed to educate constituents on avoiding
-              invalid votes. Despite the challenges of testing new team skills,
-              we successfully crafted a mobile app simulating the voting
-              process. Users could log in, imprint their thumb beside their
-              preferred candidate, submit their vote, and receive real-time
-              feedback on vote validity. Despite losing contact with the sponsor
-              post-launch, the project served as a valuable learning experience
-              for our team, marking the successful launch of our inaugural app.
+            
             </p>
-          </div>
+          </div> */}
+          <h1>Lan 4 Vote</h1>
           <img src="assets/lan4vote.png" alt="" />
+
+          <Link to="/lan4vote">
+            <motion.div
+              className="discover-more"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
+              More Info
+            </motion.div>
+          </Link>
         </div>
 
         <div className="project-1">
+          <h1>Dele School</h1>
           <img src="assets/dele.png" alt="" />
-          <div className="project-text">
-            <h1>Dele School</h1>
+          <Link to="/dele">
+            <motion.div
+              className="discover-more"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
+              More Info
+            </motion.div>
+          </Link>
+          {/* <div className="project-text">
+     
 
             <p>
               Following the LAN 4 VOT project, Peculiar Labs took on the task of
@@ -48,11 +64,11 @@ const Projects = () => {
               was not substantial, viewing it as a chance to refine our skills,
               we delivered a website that met the client's satisfaction.
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div className="project-1">
-          <div className="project-text">
+          {/* <div className="project-text">
             <h1>Techbiz Database</h1>
 
             <p>
@@ -62,14 +78,37 @@ const Projects = () => {
               aimed to make this database accessible to the local population,
               contributing to the technological advancement of the region.
             </p>
-          </div>
+          </div> */}
+          <h1>Techbiz Database</h1>
           <img src="assets/techbiz.png" alt="" />
+          <Link to="/techbiz">
+            <motion.div
+              className="discover-more"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
+              More Info
+            </motion.div>
+          </Link>
         </div>
 
         <div className="project-1">
+          <h1> AIIAC </h1>
           <img src="assets/wire.jpg" alt="" />
-          <div className="project-text">
-            <h1> AIIAC </h1>
+
+          <Link to="/allac">
+            <motion.div
+              className="discover-more"
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
+              More Info
+            </motion.div>
+          </Link>
+          {/* <div className="project-text">
+          
 
             <p>
               In mid-2023, a significant breakthrough occurred as Associates In
@@ -86,7 +125,7 @@ const Projects = () => {
               opportunities ahead and grateful for the continued support of our
               team and partners.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       <Footer />
@@ -139,6 +178,7 @@ const Div = styled.div`
   .projects {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 50px;
   }
   .project-heading {
@@ -155,15 +195,28 @@ const Div = styled.div`
   .project-1 {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     gap: 70px;
+    margin: 0 auto;
+    place-items: center;
+  }
+
+  .project-1 h1 {
+    color: black;
+    text-align: center;
+    font-family: "Conthrax", sans-serif;
+    font-size: 25x;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: capitalize;
   }
 
   .project-1 img {
     object-fit: cover;
-    max-width: 600px;
-    height: 500px;
-
+    max-width: 1200px;
+    height: 550px;
     border-radius: 20px;
+    border: 5px solid blue;
   }
 
   .project-1 div {
@@ -184,7 +237,7 @@ const Div = styled.div`
     font-weight: 500;
     text-transform: capitalize;
   }
-  .project-text p {
+  .modal-text {
     color: black;
     text-align: left;
     font-family: poppins;
@@ -195,6 +248,20 @@ const Div = styled.div`
     margin: 0 auto;
     padding: 0;
     max-width: 900px;
+  }
+
+  .discover-more {
+    border-radius: 30px;
+    background: #192bc2;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-family: "Conthrax", sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
   }
 
   @media (max-width: 768px) {

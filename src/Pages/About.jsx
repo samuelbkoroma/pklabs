@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Navbar from "../Components/Navbar";
 import styled from "styled-components";
-import Team from "../Components/Team";
 import Footer from "../Components/Footer";
 
 const About = () => {
@@ -38,7 +37,17 @@ const About = () => {
             </p>
           </div>
 
-          <img src="assets/pklabs-1.png" alt="" />
+          {/* <img src="assets/pklabs-1.png" alt="" /> */}
+        </div>
+      </div>
+
+      <div className="main vision">
+        <h1>The Pecular Vision</h1>
+        <div>
+          <p>
+            To add value to our world by using what we know best (engineering
+            and technology) to provide creative solutions to problems.
+          </p>
         </div>
       </div>
 
@@ -53,20 +62,8 @@ const About = () => {
           </p>
         </div>
       </div>
-
-      <div className="main vision">
-        <h1>The Pecular Vision</h1>
-        <div>
-          <p>
-            To build a community of unrestricted minds that uses engineering &
-            technology as primary tools to provide simple solutions to some of
-            the problems faced by people, businesses, organizations, and
-            nations.
-          </p>
-        </div>
-      </div>
-
-      <Team />
+      {/* 
+      <Team /> */}
       <Footer />
     </Div>
   );
@@ -131,7 +128,7 @@ const Div = styled.div`
 
   .main p {
     color: black;
-    text-align: left;
+    text-align: center;
     font-family: poppins;
     font-size: 19px;
     font-style: normal;
@@ -155,16 +152,17 @@ const Div = styled.div`
   }
 
   .profile p {
-    max-width: 600px;
-    height: 500px;
+    max-width: 1200px;
+    height: 300px;
+    text-align: center;
   }
 
-  .profile img {
-    width: 670px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 20px;
-  }
+  // .profile img {
+  //   width: 670px;
+  //   height: 500px;
+  //   object-fit: cover;
+  //   border-radius: 20px;
+  // }
 
   @media (max-width: 768px) {
     .profile img {
