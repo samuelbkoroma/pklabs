@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import styled from "styled-components";
 import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import Footers from "../Components/Footers";
 
 const Projects = () => {
   return (
@@ -128,7 +128,7 @@ const Projects = () => {
           </div> */}
         </div>
       </div>
-      <Footer />
+      <Footers />
     </Div>
   );
 };
@@ -216,7 +216,6 @@ const Div = styled.div`
     max-width: 1200px;
     height: 550px;
     border-radius: 20px;
-    border: 5px solid blue;
   }
 
   .project-1 div {

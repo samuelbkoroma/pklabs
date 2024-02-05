@@ -2,7 +2,7 @@
 import styled from "styled-components";
 import Navbar from "../Components/Navbar";
 import TeamCard from "../Components/TeamCard";
-import Footer from "../Components/Footer";
+import Footers from "../Components/Footers";
 
 const TeamPage = () => {
   return (
@@ -30,7 +30,7 @@ const TeamPage = () => {
         <TeamCard />
         <TeamCard />
       </div>
-      <Footer />
+      <Footers />
     </Div>
   );
 };
@@ -81,6 +81,7 @@ const Div = styled.div`
     display: flex;
     justify-content: center;
     gap: 100px;
+    flex-wrap: wrap;
   }
 
   .founder {

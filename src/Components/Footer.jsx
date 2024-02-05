@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+
+// import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -34,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="socio">
+      {/* <div className="socio">
         <div>
           {" "}
           <img src="assets/facebooks.png" alt="" />{" "}
@@ -63,7 +64,7 @@ const Footer = () => {
         <Link className="linked" to="/contact">
           Contact
         </Link>
-      </div>
+      </div> */}
     </Div>
   );
 };

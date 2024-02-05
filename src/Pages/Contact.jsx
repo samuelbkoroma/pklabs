@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import Footers from "../Components/Footers";
 
 const Contact = () => {
   return (
@@ -51,6 +52,7 @@ const Contact = () => {
       </div>
 
       <Footer />
+      <Footers />
     </Div>
   );
 };

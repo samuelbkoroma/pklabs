@@ -46,7 +46,7 @@ const Div = styled.div`
     border-radius: 20px;
     width: 100%;
     object-fit: cover;
-    height: 500px;
+    height: 400px;
   }
 
   .social {
@@ -75,5 +75,25 @@ const Div = styled.div`
 
   .social div:hover {
     background: #192bc2;
+  }
+
+  .team span {
+    color: #000;
+    font-family: poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .team p {
+    color: #666;
+    font-family: poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
   }
 `;

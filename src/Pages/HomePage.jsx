@@ -1,4 +1,4 @@
-import Footer from "../Components/Footer";
+import Footers from "../Components/Footers";
 import Hello from "../Components/Hello";
 import Hero from "../Components/Hero";
 import Navbar from "../Components/Navbar";
@@ -15,8 +15,7 @@ const HomePage = () => {
       <SectionThree />
       <WhatWeDo />
       <OurService />
-
-      <Footer />
+      <Footers />
     </div>
   );
 };

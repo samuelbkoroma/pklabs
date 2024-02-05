@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -35,9 +36,11 @@ const OurService = () => {
           <h2>Web Design</h2>
 
           <p>
-            Our approach to website design is to create a website that
-            strengthens your company’s brand while ensuring ease of use and
-            simplicity for your audience
+            We specialize in crafting compelling online experiences through our
+            expert website development services. Our team of skilled developers
+            is committed to bringing your vision to life, creating dynamic and
+            user-friendly websites tailored to meet your unique individual or
+            business needs.
           </p>
         </div>
 
@@ -46,12 +49,13 @@ const OurService = () => {
             <img src="assets/transform.png" alt="" className="icon" />
           </div>
 
-          <h2>Data Transformation</h2>
+          <h2>Mobile Application Development</h2>
 
           <p>
-            Our approach to website design is to create a website that
-            strengthens your company’s brand while ensuring ease of use and
-            simplicity for your audience
+            We specialize in delivering innovative mobile application
+            development solutions tailored to meet your business objectives. Our
+            team is dedicated to turning your ideas into reality, crafting
+            bespoke mobile apps that engage users and drive results.
           </p>
         </div>
 
@@ -60,12 +64,16 @@ const OurService = () => {
             <img src="assets/analysis.png" alt="" className="icon" />
           </div>
 
-          <h2>Data Analysis</h2>
+          <h2>Digital Transformation</h2>
 
           <p>
-            Our approach to website design is to create a website that
-            strengthens your company’s brand while ensuring ease of use and
-            simplicity for your audience
+            We are your trusted partner in digital transformation, guiding
+            enterprises through seamless transitions in today's evolving
+            business landscape. Our comprehensive services empower businesses to
+            leverage technology for enhanced efficiency and sustainable growth.
+            From strategic planning to implementation, our expert team
+            collaborates closely with you to tailor solutions to your unique
+            goals.
           </p>
         </div>
       </motion.div>
@@ -91,9 +99,11 @@ const OurService = () => {
           <h2>Cyber Security</h2>
 
           <p>
-            Our approach to website design is to create a website that
-            strengthens your company’s brand while ensuring ease of use and
-            simplicity for your audience
+            In an era where digital threats are ever-present, we are committed
+            to fortifying your business against cyber vulnerabilities. From
+            conducting comprehensive risk assessments to implementing
+            cutting-edge security measures, we specialize in creating robust
+            defense strategies.
           </p>
         </div>
 
@@ -102,12 +112,12 @@ const OurService = () => {
             <img src="assets/network.png" alt="" className="icon" />
           </div>
 
-          <h2>Office Networking</h2>
+          <h2>Database Development</h2>
 
           <p>
-            Our approach to website design is to create a website that
-            strengthens your company’s brand while ensuring ease of use and
-            simplicity for your audience
+            We specialize in crafting tailored solutions to meet your data
+            management needs. Our expert team excels in designing and
+            implementing databases that are efficient, scalable, and secure.
           </p>
         </div>
 
@@ -116,12 +126,28 @@ const OurService = () => {
             <img src="assets/building.png" alt="" className="icon" />
           </div>
 
-          <h2>Building Design & Construction</h2>
+          <h2> Build & Manage Network Infrastructures </h2>
 
           <p>
-            Our approach to website design is to create a website that
-            strengthens your company’s brand while ensuring ease of use and
-            simplicity for your audience
+            We design, build, and manage robust network infrastructures tailored
+            to the specific needs of offices and homes alike. Our team ensures
+            that your network is not only reliable and scalable but also secure,
+            providing a solid foundation for seamless connectivity.
+          </p>
+        </div>
+
+        <div className="card">
+          <div className="box">
+            <img src="assets/building.png" alt="" className="icon" />
+          </div>
+
+          <h2> Building Desing & Construction </h2>
+
+          <p>
+            We specialize in designing and constructing buildings that reflect
+            your unique style, needs, and aspirations. From conceptualization to
+            completion, our team is committed to delivering exceptional results,
+            ensuring that every detail is meticulously crafted to perfection.
           </p>
         </div>
       </motion.div>
@@ -176,7 +202,7 @@ const Div = styled.div`
   }
 
   .card {
-    max-width: 300px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;

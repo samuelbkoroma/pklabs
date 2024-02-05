@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Navbar from "../Components/Navbar";
 import styled from "styled-components";
-import Footer from "../Components/Footer";
+import Footers from "../Components/Footers";
 
 const About = () => {
   return (
@@ -16,7 +16,6 @@ const About = () => {
       </div>
 
       <div className="main">
-        <h1>BUSINESS PROFILE</h1>
         <div className="profile">
           <div>
             <p>
@@ -62,9 +61,32 @@ const About = () => {
           </p>
         </div>
       </div>
+
+      <div className="main vision">
+        <h1>The Peculars</h1>
+        <div>
+          <p>
+            We boast a diverse team of engineering experts, including
+            professionals in structural, electrical, electromechanical,
+            computer, and network engineering, as well as software development,
+            UI & UX, and computer programming. Our collective talent is
+            harnessed to address intricate engineering challenges for both our
+            community and clients. The company prioritizes the well-being of its
+            community (employees), recognizing that by doing so, it ensures
+            customer satisfaction, maintains profit margins, and cultivates a
+            well-balanced ecosystem encompassing employees, customers,
+            shareholders, investors, and society. Peculiar Labs fosters an
+            environment where community members have the necessary resources to
+            excel and contribute to the company's mission. Known for their
+            intelligence, creativity, and love for challenges, Peculiars thrive
+            on tackling the seemingly 'impossible,' delivering top-notch
+            products and services to clients
+          </p>
+        </div>
+      </div>
       {/* 
       <Team /> */}
-      <Footer />
+      <Footers />
     </Div>
   );
 };
@@ -136,7 +158,7 @@ const Div = styled.div`
     text-transform: capitalize;
     margin: 0 auto;
     padding: 0;
-    max-width: 900px;
+    max-width: 1200px;
   }
 
   .vision {
