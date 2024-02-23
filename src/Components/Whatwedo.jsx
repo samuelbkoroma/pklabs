@@ -9,7 +9,7 @@ const WhatWeDo = () => {
 
       <div className="explore">
         <div></div>
-        <h2>OUR GOAL IS TO BUILD PRODUCTS AND SERVICES</h2>
+        <h2>Solving Complex problems in Simple ways</h2>
         <div></div>
       </div>
 

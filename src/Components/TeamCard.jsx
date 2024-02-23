@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-const TeamCard = () => {
+const TeamCard = ({ image, name, role }) => {
   return (
     <Div>
       <div className="team">
-        <img src="assets/mann.png" alt="" className="main-img" />
+        <img src={image} alt="" className="main-img" />
 
-        <span>Omoyemi Jones</span>
-        <p>Backend Developer</p>
+        <span>{name}</span>
+        <p>{role}</p>
 
         <div className="social">
           <div>
@@ -83,7 +83,7 @@ const Div = styled.div`
     font-size: 20px;
     font-style: normal;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: center;
   }
 
@@ -93,7 +93,7 @@ const Div = styled.div`
     font-size: 15px;
     font-style: normal;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: center;
   }
 `;

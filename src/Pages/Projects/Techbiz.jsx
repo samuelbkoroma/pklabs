@@ -2,7 +2,8 @@
 // import React from 'react'
 import styled from "styled-components";
 import Navbar from "../../Components/Navbar";
-import Footer from "../../Components/Footer";
+
+import Footers from "../../Components/Footers";
 
 const Techbiz = () => {
   return (
@@ -11,14 +12,13 @@ const Techbiz = () => {
       <h1>Techbiz Database</h1>
 
       <p>
-        The journey continued with the "TECHBIZ DATABASE" project, where Techbiz
-        sought Peculiar Labs to create a comprehensive database of goods and
-        services available in Sierra Leone. This initiative aimed to make this
-        database accessible to the local population, contributing to the
-        technological advancement of the region.
+        Techbiz, a leading internet company in Sierra Leone, engaged Peculiar
+        Labs to establish a comprehensive database showcasing goods and services
+        available in Sierra Leone. The intention is to provide public access to
+        this database through an interactive website and mobile application
       </p>
 
-      <Footer />
+      <Footers />
     </Div>
   );
 };

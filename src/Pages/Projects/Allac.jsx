@@ -2,7 +2,8 @@
 // import React from 'react'
 import styled from "styled-components";
 import Navbar from "../../Components/Navbar";
-import Footer from "../../Components/Footer";
+
+import Footers from "../../Components/Footers";
 
 const Allac = () => {
   return (
@@ -11,21 +12,16 @@ const Allac = () => {
       <h1>ALLAC</h1>
 
       <p>
-        In mid-2023, a significant breakthrough occurred as Associates In
-        Infrastructure and Consultancies (AIIAC SL LTD) engaged Peculiar Labs as
-        their IT consultants on a retainer basis. This partnership, with an
-        initial trial arrangement of Le 110,000 per annum, marked a significant
-        milestone for Peculiar Labs. The collaboration has exceeded
-        expectations, showcasing the depth of our expertise and commitment to
-        delivering exceptional IT consultancy services. As we reflect on the
-        challenges and triumphs, we remain dedicated to our mission. The year
-        2023 has been transformative, positioning Peculiar Labs as a dynamic
-        force in the technological landscape. We are excited about the
-        opportunities ahead and grateful for the continued support of our team
-        and partners.
+        Associates In Infrastructure and Consultancies (AIIAC SL LTD) has
+        enlisted Peculiar Labs as their IT consultants under a retainer
+        arrangement. Our responsibilities encompass a range of technological
+        needs, such as general IT services, administration of office network
+        infrastructure, installation and management of security cameras,
+        configuration and maintenance of the internet domain, and oversight of
+        website services.
       </p>
 
-      <Footer />
+      <Footers />
     </Div>
   );
 };

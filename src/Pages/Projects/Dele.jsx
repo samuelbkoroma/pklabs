@@ -2,7 +2,8 @@
 // import React from 'react'
 import styled from "styled-components";
 import Navbar from "../../Components/Navbar";
-import Footer from "../../Components/Footer";
+
+import Footers from "../../Components/Footers";
 
 const Dele = () => {
   return (
@@ -11,14 +12,13 @@ const Dele = () => {
       <h1>Dele</h1>
 
       <p>
-        Following the LAN 4 VOT project, Peculiar Labs took on the task of
-        building a website for a prominent Primary and Secondary school in
-        Sierra Leone, the "DELE SCHOOL WEBSITE." Though the compensation was not
-        substantial, viewing it as a chance to refine our skills, we delivered a
-        website that met the client's satisfaction.
+        We developed an informative website for a distinguished primary and
+        secondary school in Sierra Leone, known as the "Dele Preparatory
+        PreparatoryPreparatoy School & Dele Peddle International High S Web
+        Platform.
       </p>
 
-      <Footer />
+      <Footers />
     </Div>
   );
 };
@@ -45,5 +45,6 @@ const Div = styled.div`
     font-style: normal;
     font-weight: 500;
     text-transform: capitalize;
+    margin: 20px;
   }
 `;

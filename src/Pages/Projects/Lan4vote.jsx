@@ -2,7 +2,8 @@
 // import React from 'react'
 import styled from "styled-components";
 import Navbar from "../../Components/Navbar";
-import Footer from "../../Components/Footer";
+
+import Footers from "../../Components/Footers";
 
 const Lan4vote = () => {
   return (
@@ -11,19 +12,20 @@ const Lan4vote = () => {
       <h1>Lan 4 Vote</h1>
 
       <p>
-        Under the project name "LAN 4 VOT," a Sierra Leonean parliament aspirant
-        sought Peculiar Labs' expertise to create a pro-bono digital tool. This
-        tool aimed to educate constituents on avoiding invalid votes. Despite
-        the challenges of testing new team skills, we successfully crafted a
-        mobile app simulating the voting process. Users could log in, imprint
-        their thumb beside their preferred candidate, submit their vote, and
-        receive real-time feedback on vote validity. Despite losing contact with
-        the sponsor post-launch, the project served as a valuable learning
-        experience for our team, marking the successful launch of our inaugural
-        app.
+        “LAN 4 VOT” is a tool designed to educate voters on avoiding invalid
+        votes during Sierra Leone’s national elections. This tool built as a
+        mobile application allows users to:
       </p>
 
-      <Footer />
+      <ul className="lan">
+        <li>Login</li>
+        <li>Mark their thumbprint beside their chosen candidate</li>
+        <li>Submit their vote</li>
+        <li>Receive real-time feedback on vote validity</li>
+        <li>Receive instructions on how to properly fold the ballot papers.</li>
+      </ul>
+
+      <Footers />
     </Div>
   );
 };
@@ -47,6 +49,29 @@ const Div = styled.div`
     text-align: center;
     font-family: poppins;
     font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 20px;
+  }
+
+  .lan {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    margin: 0 auto;
+    text-align: left;
+    gap: 15px;
+    max-width: 700px;
+  }
+
+  .lan li {
+    align-self: left;
+    color: black;
+    text-align: left;
+    font-family: poppins;
+    font-size: 22px;
     font-style: normal;
     font-weight: 500;
     text-transform: capitalize;

@@ -63,27 +63,24 @@ const About = () => {
       </div>
 
       <div className="main vision">
-        <h1>The Peculars</h1>
+        <h1>The Name</h1>
         <div>
           <p>
-            We boast a diverse team of engineering experts, including
-            professionals in structural, electrical, electromechanical,
-            computer, and network engineering, as well as software development,
-            UI & UX, and computer programming. Our collective talent is
-            harnessed to address intricate engineering challenges for both our
-            community and clients. The company prioritizes the well-being of its
-            community (employees), recognizing that by doing so, it ensures
-            customer satisfaction, maintains profit margins, and cultivates a
-            well-balanced ecosystem encompassing employees, customers,
-            shareholders, investors, and society. Peculiar Labs fosters an
-            environment where community members have the necessary resources to
-            excel and contribute to the company's mission. Known for their
-            intelligence, creativity, and love for challenges, Peculiars thrive
-            on tackling the seemingly 'impossible,' delivering top-notch
-            products and services to clients
+            Diverging from the norm, our founders have consistently embraced a
+            remarkably open-minded approach. They harbored a disdain for
+            conforming to conventional methods or thinking simply because they
+            were deemed "conventional." When questioned about their choices with
+            an inquiry like "Why do it this way?" their typical retort was, "Why
+            not?" Hence, in selecting a name for the company, it was imperative
+            that the chosen name reflected their perspective and conveyed the
+            narrative of embracing an unconventional, at times eccentric,
+            approach to thinking and doing things. What better name, then, to
+            encapsulate this unique and sometimes audacious mindset than
+            PECULIAR LABS.
           </p>
         </div>
       </div>
+
       {/* 
       <Team /> */}
       <Footers />

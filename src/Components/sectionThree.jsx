@@ -4,9 +4,9 @@ const SectionThree = () => {
   return (
     <Div>
       <p>
-        We make our <span>work look good </span> & have experience in the
+        {/* We make our <span>work look good </span> & have experience in the
         creation of <br /> brand identities for<span>print & web </span>, with a
-        difference.
+        difference. */}
       </p>
     </Div>
   );
@@ -16,9 +16,9 @@ export default SectionThree;
 
 const Div = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("assets/pklabs-5.png");
+    url("assets/pklabs-4.png");
   width: 100%;
-  height: 402px;
+  height: 100vh;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
