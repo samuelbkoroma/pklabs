@@ -54,12 +54,17 @@ const TeamPage = () => {
       <br /> <br /> <br />
       <h1 className="founder">The Team</h1>
       <div className="heads teams">
-        <TeamCard name="Felix Tendai Rhodes" role="Creative Director" />
+        <TeamCard
+          name="Felix Tendai Rhodes"
+          role="Creative Director"
+          image="assets/felix.jpg"
+        />
         <TeamCard
           name="Anthony Ngegba"
           role="Lead Electrical & Mechanical Engineer"
         />
         <TeamCard
+          image="assets/wallace.jpg"
           name="Wallace Omotayo Samuel Bodkin"
           role="Administrative Director"
         />
@@ -68,6 +73,7 @@ const TeamPage = () => {
       <h1 className="founder"></h1>
       <div className="heads teams">
         <TeamCard
+          image="assets/margay.jpg"
           name="Joseph Margay"
           role="Lead Network engineer & Security Developer"
         />
