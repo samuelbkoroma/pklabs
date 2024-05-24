@@ -6,6 +6,12 @@ import Navbar from "../../Components/Navbar";
 import Footers from "../../Components/Footers";
 
 const Lan4vote = () => {
+  const handleClick = () => {
+    window.open(
+      "https://play.google.com/store/apps/details?id=com.plabs.lan4vote&hl=en_US"
+    );
+  };
+
   return (
     <Div>
       <Navbar />
@@ -24,6 +30,10 @@ const Lan4vote = () => {
         <li>Receive real-time feedback on vote validity</li>
         <li>Receive instructions on how to properly fold the ballot papers.</li>
       </ul>
+
+      <button onClick={handleClick} className="lan4votebtn">
+        Check it out on play store
+      </button>
 
       <Footers />
     </Div>
@@ -75,5 +85,19 @@ const Div = styled.div`
     font-style: normal;
     font-weight: 500;
     text-transform: capitalize;
+  }
+
+  .lan4votebtn {
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    background: #192bc2;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: "Poppins", san-serif;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
   }
 `;

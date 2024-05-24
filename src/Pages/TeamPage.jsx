@@ -8,7 +8,10 @@ import Footers from "../Components/Footers";
 const TeamPage = () => {
   //obi
   const handleLinkedInClick = () => {
-    window.open("https://linkedin.com/in/yourprofile", "_blank");
+    window.open(
+      "https://www.linkedin.com/in/obinna-anthony-browne-2694a1167/",
+      "_blank"
+    );
   };
 
   const handleTwitterClick = () => {
@@ -55,6 +58,35 @@ const TeamPage = () => {
   };
   const handleLinkedInClickPaulx = () => {
     window.open(" https://www.facebook.com/paul.amara.359/", "_blank");
+  };
+
+  //maggie
+  const handleLinkedInClickMaggie = () => {
+    window.open(
+      "https://www.facebook.com/profile.php?id=61552077660930&mibextid=ZbWKwL ",
+      "_blank"
+    );
+  };
+
+  //augie
+  const handleLinkedInClickAugie = () => {
+    window.open(
+      "https://www.linkedin.com/in/augustus-batilo-jibba-750574203/",
+      "_blank"
+    );
+  };
+
+  const handleLinkedInClickAugiie = () => {
+    window.open(" https://www.instagram.com/augie.j/", "_blank");
+  };
+
+  //Emmanuel koroma
+  const handleLinkedInClickEmma = () => {
+    window.open("https://www.linkedin.com/in/emmanuelmkoroma ", "_blank");
+  };
+
+  const handleLinkedInClickEmmaa = () => {
+    window.open("https://www.instagram.com/medino080  ", "_blank");
   };
 
   const socialLinksObi = [
@@ -130,12 +162,50 @@ const TeamPage = () => {
     },
 
     {
-      logo: "assets/facebook.png",
+      logo: "assets/facebooks.png",
       name: "Twitter",
       onClick: handleLinkedInClickPaulx,
     },
   ];
 
+  //maggie
+
+  const socialLinksMaggie = [
+    {
+      logo: "assets/facebooks.png",
+      name: "Linkedin",
+      onClick: handleLinkedInClickMaggie,
+    },
+  ];
+
+  //augie
+  const socialLinksAugie = [
+    {
+      logo: "assets/linkedin.png",
+      name: "Linkedin",
+      onClick: handleLinkedInClickAugie,
+    },
+
+    {
+      logo: "assets/instagram.png",
+      name: "Twitter",
+      onClick: handleLinkedInClickAugiie,
+    },
+  ];
+  //emma
+  const socialLinksEmma = [
+    {
+      logo: "assets/linkedin.png",
+      name: "Linkedin",
+      onClick: handleLinkedInClickEmma,
+    },
+
+    {
+      logo: "assets/instagram.png",
+      name: "Twitter",
+      onClick: handleLinkedInClickEmmaa,
+    },
+  ];
   return (
     <Div>
       <Navbar />
@@ -216,6 +286,7 @@ const TeamPage = () => {
           image="assets/Maggie.jpg"
           name="Margaret Sia Mondeh"
           role="UI & UX Developer & Operations Assistant"
+          socialLinks={socialLinksMaggie}
         />
       </div>
       <div className="heads teams">
@@ -223,11 +294,13 @@ const TeamPage = () => {
           image="assets/augiee.png"
           name="Augustus Batilo Jibba"
           role="Senior Software Engineer"
+          socialLinks={socialLinksAugie}
         />
         <TeamCard
           image="assets/Emmam.png"
           name="Emmanuel Koroma"
           role="Front & Back End Developer"
+          socialLinks={socialLinksEmma}
         />
         <TeamCard
           name="Paul Amara"
