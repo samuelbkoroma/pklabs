@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const TeamCard = ({ image, name, role }) => {
+const TeamCard = ({ image, name, role, socialLinks = [] }) => {
   return (
     <Div>
       <div className="team">
@@ -10,21 +10,11 @@ const TeamCard = ({ image, name, role }) => {
         <p>{role}</p>
 
         <div className="social">
-          <div>
-            {" "}
-            <img src="assets/linkedin.png" alt="" />{" "}
-          </div>
-          <div>
-            {" "}
-            <img src="assets/instagram.png" alt="" />{" "}
-          </div>
-          <div>
-            <img src="assets/facebooks.png" alt="" width={15} height={15} />{" "}
-          </div>
-          <div>
-            {" "}
-            <img src="assets/twitter.png" alt="" />{" "}
-          </div>
+          {socialLinks.slice(0, 5).map((social, index) => (
+            <div key={index} onClick={social.onClick}>
+              <img src={social.logo} alt={social.name} />
+            </div>
+          ))}
         </div>
       </div>
     </Div>
@@ -65,6 +55,7 @@ const Div = styled.div`
     align-items: center;
     border: 1px solid #ddd;
     transition: 0.5s ease-in-out;
+    cursor: pointer;
   }
 
   .social div img {
@@ -79,9 +70,8 @@ const Div = styled.div`
 
   .team span {
     color: #000;
-    font-family: poppins;
+    font-family: Poppins, sans-serif;
     font-size: 20px;
-    font-style: normal;
     font-weight: bold;
     text-transform: capitalize;
     text-align: center;
@@ -89,9 +79,8 @@ const Div = styled.div`
 
   .team p {
     color: #666;
-    font-family: poppins;
+    font-family: Poppins, sans-serif;
     font-size: 15px;
-    font-style: normal;
     font-weight: bold;
     text-transform: capitalize;
     text-align: center;

@@ -30,17 +30,16 @@ const OurService = () => {
       >
         <div className="card">
           <div className="box">
-            <FontAwesomeIcon icon={faGlobe} className="icon" />
+            <img src="assets/building.png" alt="" className="icon" />
           </div>
 
-          <h2>Web Design</h2>
+          <h2> Build & Manage Network Infrastructures </h2>
 
           <p>
-            We specialize in crafting compelling online experiences through our
-            expert website development services. Our team of skilled developers
-            is committed to bringing your vision to life, creating dynamic and
-            user-friendly websites tailored to meet your unique individual or
-            business needs.
+            We design, build, and manage robust network infrastructures tailored
+            to the specific needs of offices and homes alike. Our team ensures
+            that your network is not only reliable and scalable but also secure,
+            providing a solid foundation for seamless connectivity.
           </p>
         </div>
 
@@ -61,19 +60,16 @@ const OurService = () => {
 
         <div className="card">
           <div className="box">
-            <img src="assets/analysis.png" alt="" className="icon" />
+            <img src="assets/building.png" alt="" className="icon" />
           </div>
 
-          <h2>Digital Transformation</h2>
+          <h2> Building Desing & Construction </h2>
 
           <p>
-            We are your trusted partner in digital transformation, guiding
-            enterprises through seamless transitions in today's evolving
-            business landscape. Our comprehensive services empower businesses to
-            leverage technology for enhanced efficiency and sustainable growth.
-            From strategic planning to implementation, our expert team
-            collaborates closely with you to tailor solutions to your unique
-            goals.
+            We specialize in designing and constructing buildings that reflect
+            your unique style, needs, and aspirations. From conceptualization to
+            completion, our team is committed to delivering exceptional results,
+            ensuring that every detail is meticulously crafted to perfection.
           </p>
         </div>
       </motion.div>
@@ -123,31 +119,35 @@ const OurService = () => {
 
         <div className="card">
           <div className="box">
-            <img src="assets/building.png" alt="" className="icon" />
+            <FontAwesomeIcon icon={faGlobe} className="icon" />
           </div>
 
-          <h2> Build & Manage Network Infrastructures </h2>
+          <h2>Web Design</h2>
 
           <p>
-            We design, build, and manage robust network infrastructures tailored
-            to the specific needs of offices and homes alike. Our team ensures
-            that your network is not only reliable and scalable but also secure,
-            providing a solid foundation for seamless connectivity.
+            We specialize in crafting compelling online experiences through our
+            expert website development services. Our team of skilled developers
+            is committed to bringing your vision to life, creating dynamic and
+            user-friendly websites tailored to meet your unique individual or
+            business needs.
           </p>
         </div>
 
         <div className="card">
           <div className="box">
-            <img src="assets/building.png" alt="" className="icon" />
+            <img src="assets/analysis.png" alt="" className="icon" />
           </div>
 
-          <h2> Building Desing & Construction </h2>
+          <h2>Digital Transformation</h2>
 
           <p>
-            We specialize in designing and constructing buildings that reflect
-            your unique style, needs, and aspirations. From conceptualization to
-            completion, our team is committed to delivering exceptional results,
-            ensuring that every detail is meticulously crafted to perfection.
+            We are your trusted partner in digital transformation, guiding
+            enterprises through seamless transitions in today's evolving
+            business landscape. Our comprehensive services empower businesses to
+            leverage technology for enhanced efficiency and sustainable growth.
+            From strategic planning to implementation, our expert team
+            collaborates closely with you to tailor solutions to your unique
+            goals.
           </p>
         </div>
       </motion.div>

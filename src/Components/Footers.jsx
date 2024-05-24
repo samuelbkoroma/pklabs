@@ -55,7 +55,7 @@ const Footers = () => {
             </Link>
             <Link to="/allac" className="links">
               {" "}
-              Allac{" "}
+              Aiiac{" "}
             </Link>
             <Link to="/team" className="links">
               {" "}

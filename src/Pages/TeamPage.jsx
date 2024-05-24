@@ -6,6 +6,136 @@ import TeamCard from "../Components/TeamCard";
 import Footers from "../Components/Footers";
 
 const TeamPage = () => {
+  //obi
+  const handleLinkedInClick = () => {
+    window.open("https://linkedin.com/in/yourprofile", "_blank");
+  };
+
+  const handleTwitterClick = () => {
+    window.open("https://x.com/IamSirOAB", "_blank");
+  };
+
+  //scar
+  const handleLinkedInClickScar = () => {
+    window.open(
+      "https://www.linkedin.com/in/tindae-feika-668781133/",
+      "_blank"
+    );
+  };
+
+  //felix
+  const handleLinkedInClickFelix = () => {
+    window.open("https://x.com/FelixTeeRhodes", "_blank");
+  };
+
+  const handleLinkedInClickFelixi = () => {
+    window.open("https://www.instagram.com/felix_da_housekat", "_blank");
+  };
+
+  //margay
+  const handleLinkedInClickMargay = () => {
+    window.open("https://www.linkedin.com/in/josephmargay", "_blank");
+  };
+
+  //power
+  const handleLinkedInClickPower = () => {
+    window.open(
+      "https://www.linkedin.com/in/samuel-b-koroma-2a432322b/",
+      "_blank"
+    );
+  };
+  const handleLinkedInClickPowerx = () => {
+    window.open("https://twitter.com/PowerMa96374678", "_blank");
+  };
+
+  // paul
+
+  const handleLinkedInClickPaul = () => {
+    window.open("https://www.linkedin.com/in/paul-amara-30716426b/", "_blank");
+  };
+  const handleLinkedInClickPaulx = () => {
+    window.open(" https://www.facebook.com/paul.amara.359/", "_blank");
+  };
+
+  const socialLinksObi = [
+    {
+      logo: "assets/linkedin.png",
+      name: "LinkedIn",
+      onClick: handleLinkedInClick,
+    },
+
+    {
+      logo: "assets/twitter.png",
+      name: "Twitter",
+      onClick: handleTwitterClick,
+    },
+  ];
+
+  //scar
+
+  const socialLinksScar = [
+    {
+      logo: "assets/linkedin.png",
+      name: "LinkedIn",
+      onClick: handleLinkedInClickScar,
+    },
+  ];
+
+  //felix
+  const socialLinksFelix = [
+    {
+      logo: "assets/twitter.png",
+      name: "Twitter",
+      onClick: handleLinkedInClickFelix,
+    },
+
+    {
+      logo: "assets/instagram.png",
+      name: "Instagram",
+      onClick: handleLinkedInClickFelixi,
+    },
+  ];
+
+  //margay
+
+  const socialLinksMargay = [
+    {
+      logo: "assets/linkedin.png",
+      name: "Linkedin",
+      onClick: handleLinkedInClickMargay,
+    },
+  ];
+
+  //power
+  const socialLinksPower = [
+    {
+      logo: "assets/linkedin.png",
+      name: "Linkedin",
+      onClick: handleLinkedInClickPower,
+    },
+
+    {
+      logo: "assets/twitter.png",
+      name: "Twitter",
+      onClick: handleLinkedInClickPowerx,
+    },
+  ];
+
+  //paul
+  const socialLinksPaul = [
+    {
+      logo: "assets/linkedin.png",
+      name: "Linkedin",
+      onClick: handleLinkedInClickPaul,
+    },
+
+    {
+      logo: "assets/facebook.png",
+      name: "Twitter",
+      onClick: handleLinkedInClickPaulx,
+    },
+  ];
+
   return (
     <Div>
       <Navbar />
@@ -44,11 +174,13 @@ const TeamPage = () => {
           name="Obinna Anthony Browne"
           image="assets/Obinna.jpg"
           role="Co-Founder & Chief Operations Officer"
+          socialLinks={socialLinksObi}
         />
         <TeamCard
           name="Tindae Barbee Feika"
           image="assets/Tindae.jpg"
           role="Co-Founder & Chief Technology Officer"
+          socialLinks={socialLinksScar}
         />
       </div>
       <br /> <br /> <br />
@@ -58,10 +190,12 @@ const TeamPage = () => {
           name="Felix Tendai Rhodes"
           role="Creative Director"
           image="assets/felix.jpg"
+          socialLinks={socialLinksFelix}
         />
         <TeamCard
           name="Anthony Ngegba"
           role="Lead Electrical & Mechanical Engineer"
+          socialLinks={socialLinksMargay}
         />
         <TeamCard
           image="assets/wallace.jpg"
@@ -76,13 +210,13 @@ const TeamPage = () => {
           image="assets/margay.jpg"
           name="Joseph Margay"
           role="Lead Network engineer & Security Developer"
+          socialLinks={socialLinksMargay}
         />
         <TeamCard
           image="assets/Maggie.jpg"
           name="Margaret Sia Mondeh"
           role="UI & UX Developer & Operations Assistant"
         />
-        <TeamCard name="Amry Samuels" role="Electrical & End Engineer" />
       </div>
       <div className="heads teams">
         <TeamCard
@@ -99,6 +233,7 @@ const TeamPage = () => {
           name="Paul Amara"
           role="UI & UX Developer"
           image="assets/Paul.jpg"
+          socialLinks={socialLinksPaul}
         />
       </div>
       <div className="heads teams">
@@ -106,6 +241,7 @@ const TeamPage = () => {
           image="assets/Samuel.jpg"
           name="Samuel B Koroma"
           role="Front End web & mobile developer"
+          socialLinks={socialLinksPower}
         />
       </div>
       <Footers />
@@ -138,7 +274,6 @@ const Div = styled.div`
     font-size: 32px;
     font-style: normal;
     font-weight: bold;
-    text-transform: uppercase;
     margin: 0;
     padding: 0;
   }
@@ -197,7 +332,6 @@ const Div = styled.div`
     font-size: 19px;
     font-style: normal;
     font-weight: 500;
-    text-transform: capitalize;
     margin: 0 auto;
     padding: 0;
     max-width: 1200px;

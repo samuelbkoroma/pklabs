@@ -40,44 +40,46 @@ const About = () => {
         </div>
       </div>
 
-      <div className="main vision">
-        <h1>The Pecular Vision</h1>
-        <div>
-          <p>
-            To add value to our world by using what we know best (engineering
-            and technology) to provide creative solutions to problems.
-          </p>
+      <div>
+        <div className="main vision">
+          <h1>The Pecular Vision</h1>
+          <div>
+            <p>
+              To add value to our world by using what we know best (engineering
+              and technology) to provide creative solutions to problems.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div className="main vision">
-        <h1>The Pecular Mission</h1>
-        <div>
-          <p>
-            To build a community of unrestricted minds that uses engineering &
-            technology as primary tools to provide simple solutions to some of
-            the problems faced by people, businesses, organizations, and
-            nations.
-          </p>
+        <div className="main vision">
+          <h1>The Pecular Mission</h1>
+          <div>
+            <p>
+              To build a community of unrestricted minds that uses engineering &
+              technology as primary tools to provide simple solutions to some of
+              the problems faced by people, businesses, organizations, and
+              nations.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div className="main vision">
-        <h1>The Name</h1>
-        <div>
-          <p>
-            Diverging from the norm, our founders have consistently embraced a
-            remarkably open-minded approach. They harbored a disdain for
-            conforming to conventional methods or thinking simply because they
-            were deemed "conventional." When questioned about their choices with
-            an inquiry like "Why do it this way?" their typical retort was, "Why
-            not?" Hence, in selecting a name for the company, it was imperative
-            that the chosen name reflected their perspective and conveyed the
-            narrative of embracing an unconventional, at times eccentric,
-            approach to thinking and doing things. What better name, then, to
-            encapsulate this unique and sometimes audacious mindset than
-            PECULIAR LABS.
-          </p>
+        <div className="main vision">
+          <h1>The Name</h1>
+          <div>
+            <p>
+              Diverging from the norm, our founders have consistently embraced a
+              remarkably open-minded approach. They harbored a disdain for
+              conforming to conventional methods or thinking simply because they
+              were deemed "conventional." When questioned about their choices
+              with an inquiry like "Why do it this way?" their typical retort
+              was, "Why not?" Hence, in selecting a name for the company, it was
+              imperative that the chosen name reflected their perspective and
+              conveyed the narrative of embracing an unconventional, at times
+              eccentric, approach to thinking and doing things. What better
+              name, then, to encapsulate this unique and sometimes audacious
+              mindset than PECULIAR LABS.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -152,7 +154,6 @@ const Div = styled.div`
     font-size: 19px;
     font-style: normal;
     font-weight: 500;
-    text-transform: capitalize;
     margin: 0 auto;
     padding: 0;
     max-width: 1200px;
@@ -184,12 +185,16 @@ const Div = styled.div`
   // }
 
   @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+
     .profile img {
       display: none;
     }
 
     .main {
-      margin-bottom: 150px;
+      margin-bottom: 100px;
     }
   }
 `;
