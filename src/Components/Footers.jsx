@@ -3,6 +3,14 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Footers = () => {
+  const handleClickTwitter = () => {
+    window.open("https://x.com/Peculiar_LabsSL", "_blank");
+  };
+
+  const handleClickLinkedin = () => {
+    window.open("https://www.linkedin.com/company/peculiar-labs/", "_blank");
+  };
+
   return (
     <Div>
       <div className="rows">
@@ -11,10 +19,12 @@ const Footers = () => {
             <img src="assets/logoblack.png" alt="" width={100} height={100} />
           </div>
           <div className="socialls">
-            <img src="assets/twitter.png" alt="" />
-            <img src="assets/instagram.png" alt="" />
-            <img src="assets/linkedin.png" alt="" />
-            <img src="assets/facebooks.png" alt="" />
+            <img src="assets/twitter.png" alt="" onClick={handleClickTwitter} />
+            <img
+              src="assets/linkedin.png"
+              alt=""
+              onClick={handleClickLinkedin}
+            />
           </div>
         </div>
 
