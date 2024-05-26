@@ -1,29 +1,49 @@
+/* eslint-disable react/no-unescaped-entities */
 import styled from "styled-components";
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import { ValidationError, useForm } from "@formspree/react";
+// import { useRef } from "react";
+// import emailjs from "@emailjs/browser";
 
 const Footer = () => {
-  const form = useRef();
+  const [state, handleSubmit] = useForm("mayrzaqn");
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  if (state.succeeded) {
+    return (
+      <p
+        className="submit-text"
+        style={{
+          fontSize: 20,
+          fontWeight: "bold",
+          textAlign: "center",
+          fontFamily: "Conthrax,sans-serif",
+        }}
+      >
+        Thanks for Contacting Pecuilar Labs We'll get back to you soon{" "}
+      </p>
+    );
+  }
 
-    emailjs
-      .sendForm("service_j1qvv5j", "template_ti9ps9h", form.current, {
-        publicKey: "1HNTr0MjRr8LdfGdf",
-      })
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("Message sent");
-          form.current.reset();
-        },
-        (error) => {
-          console.log("Failed to send message:", error.text);
-          alert("Failed to send message. Please try again.");
-        }
-      );
-  };
+  // const form = useRef();
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .sendForm("service_j1qvv5j", "template_ti9ps9h", form.current, {
+  //       publicKey: "1HNTr0MjRr8LdfGdf",
+  //     })
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //         console.log("Message sent");
+  //         form.current.reset();
+  //       },
+  //       (error) => {
+  //         console.log("Failed to send message:", error.text);
+  //         alert("Failed to send message. Please try again.");
+  //       }
+  //     );
+  // };
 
   return (
     <Div>
@@ -37,25 +57,40 @@ const Footer = () => {
         </div>
 
         <div className="contact">
-          <form action="" className="form" ref={form} onSubmit={sendEmail}>
+          <form className="form" onSubmit={handleSubmit}>
             <div className="inputs">
               <input
                 type="text"
                 placeholder="Name"
                 className="input-text"
-                name="user_name"
+                name="name"
+              />
+              <ValidationError
+                prefix="Name"
+                field="name"
+                errors={state.errors}
               />
               <input
                 type="email"
                 placeholder="Email"
                 className="input-text"
-                name="user_email"
+                name="email"
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
               />
               <input
                 type="text"
                 placeholder="Subject"
                 className="input-text"
-                name="user_subject"
+                name="subject"
+              />
+              <ValidationError
+                prefix="Email"
+                field="subject"
+                errors={state.errors}
               />
             </div>
             <textarea
@@ -65,8 +100,18 @@ const Footer = () => {
               placeholder="Message"
               className="input-text"
             ></textarea>
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
 
-            <button className="form-button" type="submit" value="send">
+            <button
+              className="form-button"
+              type="submit"
+              value="send"
+              disabled={state.submitting}
+            >
               Send Message
             </button>
           </form>
