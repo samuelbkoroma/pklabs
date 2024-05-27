@@ -23,28 +23,6 @@ const Footer = () => {
     );
   }
 
-  // const form = useRef();
-
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs
-  //     .sendForm("service_j1qvv5j", "template_ti9ps9h", form.current, {
-  //       publicKey: "1HNTr0MjRr8LdfGdf",
-  //     })
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //         console.log("Message sent");
-  //         form.current.reset();
-  //       },
-  //       (error) => {
-  //         console.log("Failed to send message:", error.text);
-  //         alert("Failed to send message. Please try again.");
-  //       }
-  //     );
-  // };
-
   return (
     <Div>
       <div className="main-contact">

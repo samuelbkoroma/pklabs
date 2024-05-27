@@ -42,7 +42,7 @@ const About = () => {
 
       <div>
         <div className="main vision">
-          <h1>The Pecular Vision</h1>
+          <h1>The Peculiar Vision</h1>
           <div>
             <p>
               To add value to our world by using what we know best (engineering
@@ -52,7 +52,7 @@ const About = () => {
         </div>
 
         <div className="main vision">
-          <h1>The Pecular Mission</h1>
+          <h1>The Peculiar Mission</h1>
           <div>
             <p>
               To build a community of unrestricted minds that uses engineering &
