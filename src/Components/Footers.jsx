@@ -40,10 +40,7 @@ const Footers = () => {
             <Link to="/contact" className="links">
               Contact
             </Link>
-            <Link to="/product" className="links">
-              {" "}
-              Products{" "}
-            </Link>
+
             <Link to="/team" className="links">
               {" "}
               Team{" "}

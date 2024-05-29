@@ -16,7 +16,7 @@ const Contact = () => {
 
       <div className="contact-info">
         <div className="contact-info-text">
-          <h1>Ways to React Us</h1>
+          <h1>Ways to Reach Us</h1>
           <p>
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered.
@@ -31,7 +31,6 @@ const Contact = () => {
           <h2>Email Us</h2>
           <p>
             peculiarlabs19@gmail.com <br />
-            peculiarlabs19@gmail.com
           </p>
 
           <h2>Our Address</h2>
@@ -45,10 +44,7 @@ const Contact = () => {
       </div>
 
       <div className="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33272.18383312458!2d-13.303209133061047!3d8.4737753873281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf04c563d4ecec4f%3A0x8aa2d3d7af4e5be3!2sLumley%20Beach%20Freetown%20Sierra%20Leone!5e0!3m2!1sen!2ssl!4v1706177777411!5m2!1sen!2ssl"
-          className="map"
-        ></iframe>
+        <img src="assets/team.JPG" className="map team-img" />
       </div>
 
       <Footer />
@@ -148,6 +144,7 @@ const Div = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    object-fit: cover;
   }
 
   @media (max-width: 768px) {

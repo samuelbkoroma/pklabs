@@ -89,6 +89,14 @@ const TeamPage = () => {
     window.open("https://www.instagram.com/medino080  ", "_blank");
   };
 
+  //wallace
+  const handleClickWallace = () => {
+    window.open(
+      "https://sl.linkedin.com/in/wallace-bodkin-3aa660273",
+      "_blank"
+    );
+  };
+
   const socialLinksObi = [
     {
       logo: "assets/linkedin.png",
@@ -206,6 +214,15 @@ const TeamPage = () => {
       onClick: handleLinkedInClickEmmaa,
     },
   ];
+
+  const socialLinksWallace = [
+    {
+      logo: "assets/linkedin.png",
+      name: "Linkedin",
+      onClick: handleClickWallace,
+    },
+  ];
+
   return (
     <Div>
       <Navbar />
@@ -271,6 +288,7 @@ const TeamPage = () => {
           image="assets/wallace.jpg"
           name="Wallace Omotayo Samuel Bodkin"
           role="Administrative Director"
+          socialLinks={socialLinksWallace}
         />
       </div>
       <br /> <br /> <br />

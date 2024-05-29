@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const TeamCard = ({ image, name, role, socialLinks = [] }) => {
+const TeamCard = ({ image, name, role, description, socialLinks = [] }) => {
   return (
     <Div>
       <div className="team">
@@ -8,6 +8,7 @@ const TeamCard = ({ image, name, role, socialLinks = [] }) => {
 
         <span>{name}</span>
         <p>{role}</p>
+        <p className="description">{description}</p>
 
         <div className="social">
           {socialLinks.slice(0, 5).map((social, index) => (
@@ -85,4 +86,6 @@ const Div = styled.div`
     text-transform: capitalize;
     text-align: center;
   }
+
+  .
 `;

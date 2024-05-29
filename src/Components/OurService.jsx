@@ -10,9 +10,9 @@ const OurService = () => {
       <h1 className="heading">OUR SERVICES</h1>
 
       <div className="explore">
-        <div></div>
-        <h2>OUR GOAL IS TO BUILD PRODUCTS AND SERVICES</h2>
-        <div></div>
+        {/* <div></div>
+        // <h2>OUR GOAL IS TO BUILD PRODUCTS AND SERVICES</h2> */}
+       {/* <div></div> */}
       </div>
 
       <motion.div
@@ -51,10 +51,10 @@ const OurService = () => {
           <h2>Mobile Application Development</h2>
 
           <p>
-            We specialize in delivering innovative mobile application
-            development solutions tailored to meet your business objectives. Our
-            team is dedicated to turning your ideas into reality, crafting
-            bespoke mobile apps that engage users and drive results.
+            We deliver innovative mobile application development solutions
+            tailored to meet your business objectives. Our team is dedicated to
+            turning your ideas into reality, crafting bespoke mobile apps that
+            engage users and drive results.
           </p>
         </div>
 
@@ -66,10 +66,11 @@ const OurService = () => {
           <h2> Building Desing & Construction </h2>
 
           <p>
-            We specialize in designing and constructing buildings that reflect
-            your unique style, needs, and aspirations. From conceptualization to
-            completion, our team is committed to delivering exceptional results,
-            ensuring that every detail is meticulously crafted to perfection.
+            We design and construct buildings that reflect your unique style,
+            needs, and aspirations. From conceptualization, to drawings,
+            structural design and build to completion, our team is committed to
+            delivering exceptional results, ensuring that every detail is
+            meticulously crafted to deliver exceptional results.
           </p>
         </div>
       </motion.div>
@@ -111,8 +112,8 @@ const OurService = () => {
           <h2>Database Development</h2>
 
           <p>
-            We specialize in crafting tailored solutions to meet your data
-            management needs. Our expert team excels in designing and
+            We take pride in creating customized solutions for your data
+            management needs. Our expert team excels at designing and
             implementing databases that are efficient, scalable, and secure.
           </p>
         </div>
@@ -125,11 +126,10 @@ const OurService = () => {
           <h2>Web Design</h2>
 
           <p>
-            We specialize in crafting compelling online experiences through our
-            expert website development services. Our team of skilled developers
-            is committed to bringing your vision to life, creating dynamic and
-            user-friendly websites tailored to meet your unique individual or
-            business needs.
+            We craft compelling online experiences through our expert website
+            development services. Our team of skilled developers is committed to
+            bringing your vision to life, creating dynamic and user-friendly
+            websites tailored to meet your unique individual or business needs.
           </p>
         </div>
 

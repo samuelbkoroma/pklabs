@@ -8,9 +8,9 @@ const WhatWeDo = () => {
       <h1 className="heading">What We DO</h1>
 
       <div className="explore">
-        <div></div>
-        <h2>Solving Complex problems in Simple ways</h2>
-        <div></div>
+        {/* <div></div> */}
+        {/* <h2>Solving Complex problems in Simple ways</h2> */}
+        {/* <div></div> */}
       </div>
 
       <motion.div
