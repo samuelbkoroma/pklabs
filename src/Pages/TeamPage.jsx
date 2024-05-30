@@ -259,15 +259,17 @@ const TeamPage = () => {
       <div className="heads teams">
         <TeamCard
           name="Obinna Anthony Browne"
-          image="assets/Obinna.jpg"
+          image="assets/obii.jpg"
           role="Co-Founder & Chief Operations Officer"
           socialLinks={socialLinksObi}
+          description="Obinna leverages his structural engineering background and product management experience to guide the company's operations with strategic vision and technical expertise"
         />
         <TeamCard
           name="Tindae Barbee Feika"
-          image="assets/Tindae.jpg"
+          image="assets/scar.jpg"
           role="Co-Founder & Chief Technology Officer"
           socialLinks={socialLinksScar}
+          description="Tindae is a techie with nearly a decade of experience in IT, specializing in low-level programming and embedded systems."
         />
       </div>
       <br /> <br /> <br />
@@ -276,8 +278,9 @@ const TeamPage = () => {
         <TeamCard
           name="Felix Tendai Rhodes"
           role="Creative Director"
-          image="assets/felix.jpg"
+          image="assets/felixx.jpg"
           socialLinks={socialLinksFelix}
+          description="Felix is a graphic designer, illustrator, painter, and sculptor, renowned for his vibrant abstract expressionist work."
         />
         <TeamCard
           name="Anthony Ngegba"
@@ -285,54 +288,62 @@ const TeamPage = () => {
           socialLinks={socialLinksMargay}
         />
         <TeamCard
-          image="assets/wallace.jpg"
+          image="assets/wallacejj.jpg"
           name="Wallace Omotayo Samuel Bodkin"
           role="Administrative Director"
           socialLinks={socialLinksWallace}
+          description="Wallace Omotayo Samuel Bodkin, an experienced Company Secretary, excels in corporate governance and regulatory compliance. His strategic mindset and communication skills ensure smooth operations and uphold corporate integrity."
         />
-      </div>
-      <br /> <br /> <br />
-      <h1 className="founder"></h1>
-      <div className="heads teams">
         <TeamCard
           image="assets/margay.jpg"
           name="Joseph Margay"
           role="Lead Network engineer & Security Developer"
           socialLinks={socialLinksMargay}
+          description="With decades of experience, Joseph Margay, a seasoned electro-mechanical engineer, combines expertise in electrical and mechanical systems to solve complex challenges. Renowned for attention to detail and a successful track record, he consistently delivers innovative solutions."
         />
         <TeamCard
-          image="assets/Maggie.jpg"
+          image="assets/maggiee.jpg"
           name="Margaret Sia Mondeh"
           role="UI & UX Developer & Operations Assistant"
           socialLinks={socialLinksMaggie}
+          description="Maggie's organizational and communication skills,  enable her to excel in dynamic environments and engage with diverse stakeholders effectively"
         />
-      </div>
-      <div className="heads teams">
         <TeamCard
           image="assets/augiee.png"
           name="Augustus Batilo Jibba"
           role="Senior Software Engineer"
           socialLinks={socialLinksAugie}
+          description="Augustus, a graduate of Physics, has a diverse skill set encompassing advanced physics knowledge, programming in Python and Dart, and expertise in frameworks like Flutter, Django, and FastAPI."
         />
         <TeamCard
           image="assets/Emmam.png"
           name="Emmanuel Koroma"
           role="Front & Back End Developer"
           socialLinks={socialLinksEmma}
+          description="Emmanuel is a versatile software developer skilled in backend and frontend development, IoT, data science, and database analysis. Passionate about innovation and problem-solving,"
         />
         <TeamCard
           name="Paul Amara"
           role="UI & UX Developer"
-          image="assets/Paul.jpg"
+          image="assets/paulinho.jpg"
           socialLinks={socialLinksPaul}
+          description="Meet Paul Amara, a dynamic and aspiring UI/UX designer on the brink of making waves in the digital design landscape. Currently a dedicated student at IPAM, I have immersed myself in the world of User Interface and User Experience design, bringing a fresh perspective and a wealth of creativity to the field."
         />
-      </div>
-      <div className="heads teams">
+
         <TeamCard
-          image="assets/Samuel.jpg"
+          image="assets/tutu.jpg"
+          name="Musa Turay"
+          role="Full-stack Developer"
+          socialLinks={socialLinksPower}
+          description="Meet Musa Turay, a talented full stack developer. He excels in creating robust, end-to-end web solutions, consistently delivering high-quality projects with attention to detail and innovation"
+        />
+
+        <TeamCard
+          image="assets/powerrm.jpg"
           name="Samuel B Koroma"
           role="Front End web & mobile developer"
           socialLinks={socialLinksPower}
+          description="Meet Samuel B. Koroma, a skilled front-end web and mobile developer. He excels in creating user-friendly interfaces and seamless experiences, consistently delivering high-quality digital projects with attention to detail and innovation"
         />
       </div>
       <Footers />
@@ -384,8 +395,10 @@ const Div = styled.div`
   .teams {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 200px;
     flex-wrap: wrap;
+
+    width: 100%;
   }
 
   .founder {
@@ -401,7 +414,7 @@ const Div = styled.div`
   }
 
   .heads {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
 
   .main h1 {

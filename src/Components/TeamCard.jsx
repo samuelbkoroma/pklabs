@@ -8,7 +8,6 @@ const TeamCard = ({ image, name, role, description, socialLinks = [] }) => {
 
         <span>{name}</span>
         <p>{role}</p>
-        <p className="description">{description}</p>
 
         <div className="social">
           {socialLinks.slice(0, 5).map((social, index) => (
@@ -17,6 +16,7 @@ const TeamCard = ({ image, name, role, description, socialLinks = [] }) => {
             </div>
           ))}
         </div>
+        <p className="description">{description}</p>
       </div>
     </Div>
   );
@@ -31,6 +31,7 @@ const Div = styled.div`
     width: 400px;
     height: 500px;
     align-items: center;
+    margin-top:100px;
   }
 
   .main-img {
@@ -83,9 +84,10 @@ const Div = styled.div`
     font-family: Poppins, sans-serif;
     font-size: 15px;
     font-weight: bold;
-    text-transform: capitalize;
+
     text-align: center;
   }
+
 
   .
 `;
