@@ -44,7 +44,7 @@ const Contact = () => {
       </div>
 
       <div className="map-container">
-        <img src="assets/teampklans.jpg" className="map team-img" />
+        <img src="assets/teampk.jpg" className="map team-img" />
       </div>
 
       <Footer />

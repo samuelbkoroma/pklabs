@@ -362,7 +362,7 @@ const Div = styled.div`
     justify-content: center;
     width: 100%;
     height: 600px;
-    background-image: url("assets/pklabs-4.png");
+    background-image: url("assets/teampklans.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

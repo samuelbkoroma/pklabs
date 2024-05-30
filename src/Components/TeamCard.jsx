@@ -8,6 +8,7 @@ const TeamCard = ({ image, name, role, description, socialLinks = [] }) => {
 
         <span>{name}</span>
         <p>{role}</p>
+        <p className="description">{description}</p>
 
         <div className="social">
           {socialLinks.slice(0, 5).map((social, index) => (
@@ -16,7 +17,6 @@ const TeamCard = ({ image, name, role, description, socialLinks = [] }) => {
             </div>
           ))}
         </div>
-        <p className="description">{description}</p>
       </div>
     </Div>
   );

@@ -39,6 +39,7 @@ const About = () => {
           {/* <img src="assets/pklabs-1.png" alt="" /> */}
         </div>
       </div>
+      <img src="assets/fd.jpg" alt="" className="fd" />
 
       <div>
         <div className="main vision">
@@ -147,6 +148,14 @@ const Div = styled.div`
     padding: 0;
   }
 
+  .fd {
+    max-width: 800px;
+    object-fit: cover;
+    height: 800px;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+
   .main p {
     color: black;
     text-align: center;
@@ -195,6 +204,14 @@ const Div = styled.div`
 
     .main {
       margin-bottom: 100px;
+    }
+
+    .fd {
+      max-width: 400px;
+      object-fit: cover;
+      height: 800px;
+      border-radius: 20px;
+      margin: 0 auto;
     }
   }
 `;

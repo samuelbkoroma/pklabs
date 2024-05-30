@@ -64,10 +64,6 @@ const Footers = () => {
               {" "}
               Aiiac{" "}
             </Link>
-            <Link to="/team" className="links">
-              {" "}
-              Team{" "}
-            </Link>
           </div>
         </div>
       </div>
