@@ -7,7 +7,7 @@ const TeamCard = ({ image, name, role, description, socialLinks = [] }) => {
         <img src={image} alt="" className="main-img" />
 
         <span>{name}</span>
-        <p>{role}</p>
+        <p className="role">{role}</p>
         <p className="description">{description}</p>
 
         <div className="social">
@@ -87,6 +87,16 @@ const Div = styled.div`
 
     text-align: center;
   }
+
+    .team p {
+    color: #666;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    font-style:italic;
+    text-align: center;
+  }
+
 
 
   .
