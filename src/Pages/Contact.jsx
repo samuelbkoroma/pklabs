@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 // import React from "react";
 import styled from "styled-components";
 import Navbar from "../Components/Navbar";
@@ -13,6 +14,11 @@ const Contact = () => {
         <h1>Contact</h1>
         <p>Get All our Contact</p>
       </div>
+      <p className="tagline">
+        "At Peculiar, our primary mode of operation is remote work, <br />
+        convening only when necessary, much like the Avengers assembling when
+        duty calls."
+      </p>
 
       <div className="contact-info">
         <div className="contact-info-text">
@@ -117,6 +123,17 @@ const Div = styled.div`
     font-style: normal;
     font-weight: 600;
     line-height: 28px; /* 175% */
+  }
+
+  .tagline {
+    text-align: center;
+    color: #333;
+    font-family: poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 28px;
+    font-style: italic;
   }
 
   .contact-info img {
