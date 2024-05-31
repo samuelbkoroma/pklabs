@@ -97,6 +97,19 @@ const TeamPage = () => {
     );
   };
 
+  //turamatic
+
+  const handleClickTuray = () => {
+    window.open("https://www.linkedin.com/in/musa-turay15818/", "_blank");
+  };
+
+  const handleClickWallaceTurayy = () => {
+    window.open(
+      "https://www.facebook.com/profile.php?id=100008010226038&mibextid=ZbWKwL",
+      "_blank"
+    );
+  };
+
   const socialLinksObi = [
     {
       logo: "assets/linkedin.png",
@@ -223,6 +236,20 @@ const TeamPage = () => {
     },
   ];
 
+  const socialLinksTuray = [
+    {
+      logo: "assets/linkedin.png",
+      name: "Linkedin",
+      onClick: handleClickTuray,
+    },
+
+    {
+      logo: "assets/facebooks.png",
+      name: "Facebook",
+      onClick: handleClickWallaceTurayy,
+    },
+  ];
+
   return (
     <Div>
       <Navbar />
@@ -327,14 +354,14 @@ const TeamPage = () => {
           role="UI & UX Developer"
           image="assets/paulinho.jpg"
           socialLinks={socialLinksPaul}
-          description="Meet Paul Amara, a dynamic and aspiring UI/UX designer on the brink of making waves in the digital design landscape. Currently a dedicated student at IPAM, I have immersed myself in the world of User Interface and User Experience design, bringing a fresh perspective and a wealth of creativity to the field."
+          description="Meet Paul Amara, a dynamic and aspiring UI/UX designer on the brink of making waves in the digital design landscape. Currently a dedicated student at IPAM, He has immersed himself in the world of User Interface and User Experience design, bringing a fresh perspective and a wealth of creativity to the field."
         />
 
         <TeamCard
           image="assets/tutu.jpg"
           name="Musa Turay"
           role="Full-stack Developer"
-          socialLinks={socialLinksPower}
+          socialLinks={socialLinksTuray}
           description="Meet Musa Turay, a talented full stack developer. He excels in creating robust, end-to-end web solutions, consistently delivering high-quality projects with attention to detail and innovation"
         />
 
